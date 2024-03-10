@@ -1,43 +1,49 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Popins';
+    font-family: 'Popins', sans-serif;
 }
 
 .video {
+    position: relative;
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .video video {
-    height: 100vh;
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    z-index: 1;
 }
 
 .video_content {
     position: absolute;
-    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw; /* Используйте относительный размер текста */
     color: antiquewhite;
-    z-index: 2;
+    text-align: center;
 }
 
 .container {
-    top: 55%;
     position: absolute;
-    font-size: 60px;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2vw; /* Используйте относительный размер текста */
     color: antiquewhite;
-    z-index: 2;
 }
 
-.container li a:hover {
-    opacity: 1;
+.container a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.container a:hover {
+    color: red;
 }
