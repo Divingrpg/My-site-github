@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Popins';
+}
+
+.video {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video_content {
+    position: absolute;
+    font-size: 20px;
+    color: antiquewhite;
+    z-index: 2;
+}
+
+.container {
+    top: 55%;
+    position: absolute;
+    font-size: 60px;
+    color: antiquewhite;
+    z-index: 2;
+}
+
+.container li a:hover {
+    opacity: 1;
+}
